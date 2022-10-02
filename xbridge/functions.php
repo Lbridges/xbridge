@@ -177,6 +177,11 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 }
 
 /**
+ * Add custom blocks for gutenberg
+ */
+require get_template_directory() . '/blocks/blocks.php';
+
+/**
  * Enqueue scripts and styles
  */
 
