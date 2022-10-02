@@ -176,13 +176,23 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
-/**
- * Add custom blocks for gutenberg
- */
-require get_template_directory() . '/blocks/blocks.php';
 
 /**
  * Enqueue scripts and styles
  */
+
+ 
+function xbridge_register_styles(){
+	$version = wp_get_theme()->get( 'Version' );
+	wp_enqueue_style( 'xbridge-bootstrap', "https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css", array(), $version, 'all' );
+}
+add_action( 'wp_enqueue_scripts', 'xbridge_register_styles' );
+
+function xbridge_register_scripts(){
+	wp_enqueue_scripts( 'xbridge-jquery', "https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js", array(), '3.6.0' );
+	wp_enqueue_scripts( 'xbridge-boot-bundle', "https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js", array(), '4.6.1' );
+	wp_enqueue_scripts( 'xbridge-carousel', get_template_directory_uri() . "/js/carousel.js", array(), '4.6.1' );
+}
+add_action( 'wp_enqueue_script', 'xbridge_register_scripts' );
 
 
