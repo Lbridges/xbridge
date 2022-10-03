@@ -84,15 +84,98 @@ body {
 
 /* Custom Styles */
 
-/* WP Nav + Bootstrap */
-.nav-item a {
+/* BTNS */
+a.btn-outline {
+	border-radius: 0px;
+	border: 2px solid #efefef;
 	color: #efefef;
+	font-size: 20px;
+	background-color: rgba( 0, 0, 0, .2);
+}
+
+/* WP Nav + Bootstrap */
+a.navbar-brand {
+	color: blue;
+}
+.nav-item a {
+	color: #555;
 	margin-right: 16px;
 }
 
 /* Carousel */
+
+
+
+
 .first-slide,
 .second-slide,
 .third-slide {
 	width: 100%;
 }
+
+.carousel-caption h1 {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* Featurette */
+.marketing {
+	margin-top: 64px;
+}
+
+
+
+/* Mobile */
+@media (max-width: 576px) { 
+	.carousel {
+		margin-top: 64px;
+	}
+	.carousel-inner,
+	.carousel-item  {
+		height: 300px;
+	}
+	.first-slide,
+	.second-slide,
+	.third-slide {
+		width: 576px;
+		height: auto;
+		object-fit: scale-down;
+	}
+ }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+	.carousel {
+		margin-top: 32px;
+	}
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+	.carousel {
+		margin-top: 24px;
+	} 
+}
+
+@media (max-width: 768px) { 
+	.navbar-nav {
+		display: none;
+	} 
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+	.carousel {
+		margin-top: 16px;
+	}
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+	.carousel {
+		margin-top: 0px;
+	}
+ }
+
+
+/* End Mobile */

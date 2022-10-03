@@ -16,32 +16,29 @@ get_header();
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-            <img class="first-slide" src="<?php echo get_template_directory_uri() . '/img/vacation-ownership-reflecting-sky.png' ?>" alt="First slide">
+            <img class="first-slide" src="<?php echo get_template_directory_uri() . '/img/vacation-ownership-mountain-pool-slide.png' ?>" alt="Vacation Ownership Reflecting Sky">
             <div class="container">
                 <div class="carousel-caption text-left">
-                <h1>Example headline.</h1>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                <h1>Vacation Ownership</h1>
+                <p><a class="btn btn-lg btn-outline" href="#" role="button">Sign up today</a></p>
                 </div>
             </div>
             </div>
             <div class="carousel-item">
-            <img class="second-slide" src="<?php echo get_template_directory_uri() . '/img/vacation-ownership-relaxation.png' ?>" alt="Second slide">
+            <img class="second-slide" src="<?php echo get_template_directory_uri() . '/img/vacation-ownership-pool-sunset-slide.png' ?>" alt="Vacation Ownership Relaxation">
             <div class="container">
                 <div class="carousel-caption">
-                <h1>Another example headline.</h1>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                <h1>Adventure Management</h1>
+                <p><a class="btn btn-lg btn-outline" href="#" role="button">Learn more</a></p>
                 </div>
             </div>
             </div>
             <div class="carousel-item">
-            <img class="third-slide" src="<?php echo get_template_directory_uri() . '/img/vacation-ownership-luxuries.png' ?>" alt="Third slide">
+            <img class="third-slide" src="<?php echo get_template_directory_uri() . '/img/vacation-ownership-scenery-slide.png' ?>" alt="Vacation Ownership Mountain Scene">
             <div class="container">
                 <div class="carousel-caption text-right">
-                <h1>One more for good measure.</h1>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                <h1>Discover New Luxury</h1>
+                <p><a class="btn btn-lg btn-outline" href="#" role="button">Browse Locations</a></p>
                 </div>
             </div>
             </div>

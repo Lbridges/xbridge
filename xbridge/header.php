@@ -25,7 +25,7 @@
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light">
                 <a class="navbar-brand" href="#">Luxury Ownership</a>
                 <?php
                 wp_nav_menu(
@@ -33,7 +33,7 @@
                         'menu' => 'primary',
                         'container' => '',
                         'theme_location' => 'primary',
-                        'items_wrap' => '<ul id="" class="navbar-nav mr-auto">%3$s</ul>'
+                        'items_wrap' => '<ul id="" class="navbar-nav">%3$s</ul>'
                     )
                 );
                 ?>
