@@ -18,7 +18,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="wp-content/themes/xbridge/img/favicon.ico" />
         <?php
 		wp_head();
 		?>
@@ -27,21 +27,23 @@
         <header>
             <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
                 <a class="navbar-brand" href="#">Luxury Ownership</a>
+                <?php
+                wp_nav_menu(
+                    array(
+                        'menu' => 'primary',
+                        'container' => '',
+                        'theme_location' => 'primary',
+                        'items_wrap' => '<ul id="" class="navbar-nav mr-auto">%3$s</ul>'
+                    )
+                );
+                ?>
+
+                
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Disabled</a>
-                        </li>
-                    </ul>
+                    
                 </div>
             </nav>
         </header>

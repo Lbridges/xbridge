@@ -176,6 +176,19 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/**
+ * Register Menus
+ */
+
+function xbridge_menus(){
+	$locations = array(
+		'primary' => "Desktop Primary Top Nav",
+		'footer' => "Footer Menu Items",
+		"mobile" => "Mobile Menu Items"
+	);
+	register_nav_menus( $locations );
+}
+add_action( 'init', 'xbridge_menus' );
 
 /**
  * Enqueue scripts and styles
