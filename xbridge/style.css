@@ -94,6 +94,10 @@ a.btn-outline {
 }
 
 /* WP Nav + Bootstrap */
+.navbar-brand img {
+	width: 48px;
+	height: auto;
+}
 a.navbar-brand {
 	color: blue;
 }
@@ -130,6 +134,9 @@ a.navbar-brand {
 	.carousel {
 		margin-top: 64px;
 	}
+	.carousel-inner {
+		background-color: #555;
+	}
 	.carousel-inner,
 	.carousel-item  {
 		height: 300px;
@@ -158,9 +165,7 @@ a.navbar-brand {
 }
 
 @media (max-width: 768px) { 
-	.navbar-nav {
-		display: none;
-	} 
+	
 }
 
 /* Large devices (desktops, 992px and up) */

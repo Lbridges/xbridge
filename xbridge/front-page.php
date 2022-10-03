@@ -28,7 +28,7 @@ get_header();
             <img class="second-slide" src="<?php echo get_template_directory_uri() . '/img/vacation-ownership-pool-sunset-slide.png' ?>" alt="Vacation Ownership Relaxation">
             <div class="container">
                 <div class="carousel-caption">
-                <h1>Adventure Management</h1>
+                <h1>Adventure Investment</h1>
                 <p><a class="btn btn-lg btn-outline" href="#" role="button">Learn more</a></p>
                 </div>
             </div>
