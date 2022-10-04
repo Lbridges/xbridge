@@ -106,6 +106,10 @@ a.navbar-brand {
 	margin-right: 16px;
 }
 
+
+.badge.bg-primary {
+	color: #fff;
+}
 /* Carousel */
 
 
@@ -125,6 +129,11 @@ a.navbar-brand {
 /* Featurette */
 .marketing {
 	margin-top: 64px;
+	margin-bottom: 64px;
+}
+
+.marketing h2 {
+	font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
